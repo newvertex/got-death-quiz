@@ -23,12 +23,11 @@ function incrementScore() {
 }
 
 function saveHighScore() {
-  if (store.score > store.highScore) {
-    localStorage.setItem('highScore', store.score)
-    return showHighScore();
+  if (store.score <= store.highScore) {
+    return;
   }
-
-  return 0;
+  
+  localStorage.setItem('highScore', store.score)
 }
 
 function showHighScore() {
@@ -163,6 +162,7 @@ function playGame() {
 function endGame() {
   // other stuff to do when game over say saving score will be done here.
   saveHighScore();
+  showHighScore();
   renderGameOver();
 }
 

@@ -121,9 +121,6 @@ body {
   font-weight: bold;
 }
 
-.score-static-text {
-}
-
 .high-score-container {
   font-size: 24px;
   color: #a51717;
@@ -135,9 +132,6 @@ body {
   color: #a51717;
   line-height: 1;
   font-weight: bold;
-}
-
-.high-score-static-text {
 }
 
 .game-footer {
